@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* CSS RESET */
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+3. Allow percentage-based heights in the application
+*/
+html, body {
+    height: 100%;
+}
+/*
+Typographic tweaks!
+4. Add accessible line-height
+5. Improve text rendering
+*/
+body {
+    /* line-height: 2; */
+    -webkit-font-smoothing: antialiased;
+}
+/*
+6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+/*
+8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/* CSS RESET END */
+
+/* BASE */
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    width: 23.437rem;
+}
+
+p {
+    font-size: 1.125rem;
+    color: hsl(215, 51%, 70%);
+}
+
+#content {
+    margin: 1.5rem;
+}
+
+/* NFT IMAGE */
+#img__cube {
+    border-radius: .5rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+#img__cube img {
+    width: 100%;
+    display: block;
+}
+
+#img__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+#img__overlay img {
+    position: absolute;
+    width: 3.125rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#img__cube:hover #img__overlay {
+    display: block;
+
+}
+
+
+/* TITLE & INFO */
+#nft__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#nft__title a {
+    text-decoration: none;
+    color: white;
+}
+
+#nft__title a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+#nft__description {
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+/* PRICING & DAYS LEFT*/
+#price__time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+#nft__price, #daysLeft {
+    display: flex;
+    align-items: center;
+}
+
+#nft__price p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    padding-left: 0.411rem;
+}
+
+#nft__price img {
+    width: 1rem;
+}
+
+#daysLeft p {
+    padding-left: 7px;
+}
+
+#daysLeft img {
+    color: hsl(215, 51%, 70%);                                   
+    width: 1rem;
+}
+
+/* BORDER */
+#border {
+    border: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 1.2rem;
+}
+
+/* CREATOR */
+#creator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#creator img {
+    width: 2.062rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#creator__name {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#creator__name:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+/* FOOTER */
+footer {
+    position:absolute;
+    bottom: 3.125rem;
+}
+
+.attribution {
+    font-size: 0.687rem; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
