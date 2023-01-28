@@ -106,7 +106,7 @@ p {
 
 #img__cube:hover #img__overlay {
     display: block;
-
+    cursor: pointer;
 }
 
 
